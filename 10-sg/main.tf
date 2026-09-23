@@ -110,7 +110,7 @@ resource "aws_security_group_rule" "node_vpc" {
 }
 
 # RDS accepting connections from bastion
-resource "aws_security_group_rule" "db_to_bastion" {
+resource "aws_security_group_rule" "db_bastion" {
   type              = "ingress"
   from_port         = 3306
   to_port           = 3306
